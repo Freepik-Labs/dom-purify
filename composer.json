@@ -17,6 +17,7 @@
         "symfony/process": "^5.1"
     },
     "require-dev": {
+        "phpunit/phpunit": "^9.2"
     },
     "repositories": [
 	],
