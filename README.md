@@ -6,6 +6,7 @@ Check [this page](https://github.com/cure53/DOMPurify/tree/main/demos#what-is-th
 
 ## Requirements
 - php:  *>=7.4*
+- node: *>=10.21.0*
 
 ## Installation
 
