@@ -5,7 +5,7 @@ A simple wrapper to [Dom Purify](https://github.com/cure53/DOMPurify) js library
 Check [this page](https://github.com/cure53/DOMPurify/tree/main/demos#what-is-this) for more config options
 
 ## Requirements
-- php:  *>7.4*
+- php:  *>=7.4*
 
 ## Installation
 
@@ -20,11 +20,11 @@ composer require freepik-labs/dom-purify
     use FreepikLabs\DomPurify\Purifier;
 
     $process = new Purifier;
-    $output = $process->clean('<svg><g onload="alert(\'test\')"></g>', [
+
+    // Output will look like <svg><g></g></svg>
+    $sanitized = $process->clean('<svg><g onload="alert(\'test\')"></g>', [
         'USE_PROFILES' => [
             'svg' => true
         ]
     ]);
-
-    $this->assertEquals('<svg><g></g></svg>', $output);
 ```
