@@ -1,6 +1,8 @@
 # DOMPurify php wrapper
 
-A simple wrapper to [Dom Purify](https://github.com/cure53/DOMPurify) js library
+A simple wrapper to [Dom Purify](https://github.com/cure53/DOMPurify) js library.
+
+Check [this page](https://github.com/cure53/DOMPurify/tree/main/demos#what-is-this) for more config options
 
 ## Requirements
 - php:  *>7.4*
