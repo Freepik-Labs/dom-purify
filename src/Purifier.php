@@ -17,13 +17,18 @@ class Purifier
 
     public function clean(string $string, array $config = [])
     {
+        $temporalFile = tmpfile();
+        fwrite($temporalFile, $string);
+
         $process = new Process([
             $this->executablePath,
-            base64_encode($string),
+            stream_get_meta_data($temporalFile)['uri'],
             base64_encode(json_encode($config)),
         ]);
 
         $process->run();
+
+        fclose($temporalFile);
 
         if ($error = $process->getErrorOutput()) {
             throw new InvalidOutputException("Purifier error: {$error} | " . $process->getOutput());
