@@ -1,0 +1,4 @@
+vendor/
+.idea/
+*.sublime-workspace
+*.local.*
