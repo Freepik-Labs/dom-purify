@@ -3,3 +3,4 @@ vendor/
 *.sublime-workspace
 *.local.*
 composer.lock
+.phpunit.result.cache
