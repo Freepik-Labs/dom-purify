@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "dompurify": "^2.3.0",
+    "dompurify": "^2.4.0",
     "jsdom": "^16.7.0"
   }
 }
