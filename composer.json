@@ -29,5 +29,6 @@
         }
     ],
     "scripts": {
+        "tests": "vendor/bin/phpunit"
     }
 }
